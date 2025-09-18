@@ -1,0 +1,109 @@
+datasets:
+  - name: TUH1
+    path: ./TUH/0
+    contain_EEG: True
+    contain_EOG: False
+    contain_ECG: False
+    contain_EMG: True
+  - name: TUH2
+    path: ./TUH/1
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: False
+    contain_EMG: True
+  - name: TUH3
+    path: ./TUH/2
+    contain_EEG: True
+    contain_EOG: False
+    contain_ECG: True
+    contain_EMG: True
+  - name: TUH4
+    path: ./TUH/3
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: False
+  - name: CAP0
+    path: ./CAP/preprocessed/0
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP1
+    path: ./CAP/preprocessed/1
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP2
+    path: ./CAP/preprocessed/2
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP3
+    path: ./CAP/preprocessed/3
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP4
+    path: ./CAP/preprocessed/4
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP5
+    path: ./CAP/preprocessed/5
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP6
+    path: ./CAP/preprocessed/6
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP7
+    path: ./CAP/preprocessed/7
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP8
+    path: ./CAP/preprocessed/8
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP9
+    path: ./CAP/preprocessed/9
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: CAP10
+    path: ./CAP/preprocessed/10
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: True
+  - name: Sleep-EDF
+    path: ./Sleep-EDF/preprocessed
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: False
+    contain_EMG: True
+  - name: DEAP
+    path: .//DEAP/preprocessed
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: False
+    contain_EMG: True
+  - name: GX
+    path: ./GX/preprocessed
+    contain_EEG: True
+    contain_EOG: True
+    contain_ECG: True
+    contain_EMG: False
