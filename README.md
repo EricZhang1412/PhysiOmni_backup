@@ -1,5 +1,8 @@
 # PhysioOmni
 
+## Pre-trained weights
+https://huggingface.co/Weibang/PhysioOmni
+
 ## Enviroment preparation
 ```bash
 conda create -n PhysioOmni python=3.12
@@ -56,3 +59,4 @@ OMP_NUM_THREADS=1 torchrun --nnodes=1 --nproc_per_node=4 train_finetune.py \
     --wandb_runname your_runname \
     --wandb_api_key your_api_key \
 ```
+
