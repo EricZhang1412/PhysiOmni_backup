@@ -286,7 +286,8 @@ def main(args):
         EOG_encoder_conf = NTConfig(**EOG_encoder_args)
         ECG_encoder_conf = NTConfig(**ECG_encoder_args)
         EMG_encoder_conf = NTConfig(**EMG_encoder_args)
-        pretrained_ckpt_path = os.path.join(args.out_dir, args.pretrained_dir, 'ckpt-49.pt')
+        # pretrained_ckpt_path = os.path.join(args.out_dir, args.pretrained_dir, 'ckpt-49.pt')
+        pretrained_ckpt_path = args.pretrained_dir
         model = FT(EEG_encoder_conf if contain_EEG else None, EOG_encoder_conf if contain_EOG else None, 
                    ECG_encoder_conf if contain_ECG else None, EMG_encoder_conf if contain_EMG else None, 
                    pretrained_ckpt_path, n_classes, regression, loss_ratio=loss_ratio, n_embedings=n_embedings)

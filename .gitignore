@@ -36,3 +36,5 @@ analysis_outputs/
 
 # Local env files
 .env
+
+*.pt

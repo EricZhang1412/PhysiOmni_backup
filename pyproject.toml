@@ -12,6 +12,7 @@ dependencies = [
     "timm",
     "spikingjelly==0.0.0.0.14",
     "numpy",
+    "mne",
     "pandas",
     "scikit-learn",
     "PyYAML",
