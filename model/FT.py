@@ -90,7 +90,7 @@ class FT(nn.Module):
 
         if pretrained_ckpt_path is not None:
             print('loading weight from pretrained_ckpt')
-            pretrained_ckpt = torch.load(pretrained_ckpt_path)['model']
+            pretrained_ckpt = torch.load(pretrained_ckpt_path, weights_only=False)['model']
             EEG_dict = OrderedDict()
             EOG_dict = OrderedDict()
             ECG_dict = OrderedDict()

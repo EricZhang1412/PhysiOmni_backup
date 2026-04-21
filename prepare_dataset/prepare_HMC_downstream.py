@@ -26,7 +26,8 @@ ecg_h_freq = 60.0
 ecg_rsfreq = 500
 
 emg_l_freq = 5
-emg_h_freq = 200.0
+# emg_h_freq = 200.0
+emg_h_freq = 100.0
 emg_rsfreq = 500
 
 
@@ -120,7 +121,7 @@ def load_up_objects(fileList, Features, Labels, OutDir):
                 "ECG_ch_names": ['ECG'],
                 "EMG": EMG_signal,
                 "EMG_ch_names": ['EMG'],
-                "Y": int(label),
+                "Y": int(label[0]),
             }
             #print(EEG_signal.shape, EOG_signal.shape, ECG_signal.shape, EMG_signal.shape)
 
@@ -139,8 +140,8 @@ def save_pickle(object, filename):
         pickle.dump(object, f)
 
 
-root = "./HMC/physionet.org/files/hmc-sleep-staging/1.1/recordings"
-out_dir = './HMC/preprocessed'
+root = "/data2/dataset/hmc_bak/HMC/physionet.org/files/hmc-sleep-staging/1.1/recordings/"
+out_dir = '/data2/dataset/hmc_bak/HMC/preprocessed'
 train_out_dir = os.path.join(out_dir, "train")
 eval_out_dir = os.path.join(out_dir, "eval")
 test_out_dir = os.path.join(out_dir, "test")
